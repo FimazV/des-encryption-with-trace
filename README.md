@@ -1,4 +1,6 @@
-# DES Encryption Implementation with Trace
+# DES Encryption Implementation with Trace  
+<img width="557" alt="desenc" src="https://user-images.githubusercontent.com/8156002/31529241-a324d068-af9d-11e7-96bd-db7fa8f4bdb3.png">  
+
 ## Core Features
 - Encrypt a specified 64-bit (16 hex digit) data value with a 64-bit (16 hex digit) key using DES.  
 - Show Trace  
