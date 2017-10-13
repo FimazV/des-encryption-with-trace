@@ -1,0 +1,240 @@
+Input Plain Text (16 hex digit) :
+123456ABCD132536
+Input DES Key (16 hex digit) :
+AABB09182736CCDD
+------------------------------------------------
+SETUP Process
+
+PLAIN TEXT (in binary):
+0001001000110100010101101010101111001101000100110010010100110110
+KEY (in binary):
+1010101010111011000010010001100000100111001101101100110011011101
+
+------------------------------------------------
+SUBKEYS Generation Process
+
+C0D0
+11000011110000000011001110100011001111110000110011111010
+
+K1:
+In Binary:
+000110010100110011010000011100101101111010001100
+In Hex(6 hex digit):
+194cd072de8c
+In Hex(8 hex digit - 6 bits data per byte):
+061433101c2d3a0c
+
+K2:
+In Binary:
+010001010110100001011000000110101011110011001110
+In Hex(6 hex digit):
+4568581abcce
+In Hex(8 hex digit - 6 bits data per byte):
+11162118062b330e
+
+K3:
+In Binary:
+000001101110110110100100101011001111010110110101
+In Hex(6 hex digit):
+06eda4acf5b5
+In Hex(8 hex digit - 6 bits data per byte):
+012e36242b0f1635
+
+K4:
+In Binary:
+110110100010110100000011001010110110111011100011
+In Hex(6 hex digit):
+da2d032b6ee3
+In Hex(8 hex digit - 6 bits data per byte):
+362234030a363b23
+
+K5:
+In Binary:
+011010011010011000101001111111101100100100010011
+In Hex(6 hex digit):
+69a629fec913
+In Hex(8 hex digit - 6 bits data per byte):
+1a1a18293f2c2413
+
+K6:
+In Binary:
+110000011001010010001110100001110100011101011110
+In Hex(6 hex digit):
+c1948e87475e
+In Hex(8 hex digit - 6 bits data per byte):
+3019120e21341d1e
+
+K7:
+In Binary:
+011100001000101011010010110111011011001111000000
+In Hex(6 hex digit):
+708ad2ddb3c0
+In Hex(8 hex digit - 6 bits data per byte):
+1c082b12371b0f00
+
+K8:
+In Binary:
+001101001111100000100010111100001100011001101101
+In Hex(6 hex digit):
+34f822f0c66d
+In Hex(8 hex digit - 6 bits data per byte):
+0d0f20223c0c192d
+
+K9:
+In Binary:
+100001001011101101000100011100111101110011001100
+In Hex(6 hex digit):
+84bb4473dccc
+In Hex(8 hex digit - 6 bits data per byte):
+210b2d041c3d330c
+
+K10:
+In Binary:
+000000100111011001010111000010001011010110111111
+In Hex(6 hex digit):
+02765708b5bf
+In Hex(8 hex digit - 6 bits data per byte):
+00271917020b163f
+
+K11:
+In Binary:
+011011010101010101100000101011110111110010100101
+In Hex(6 hex digit):
+6d5560af7ca5
+In Hex(8 hex digit - 6 bits data per byte):
+1b1515202b373225
+
+K12:
+In Binary:
+110000101100000111101001011010100100101111110011
+In Hex(6 hex digit):
+c2c1e96a4bf3
+In Hex(8 hex digit - 6 bits data per byte):
+302c07291a242f33
+
+K13:
+In Binary:
+100110011100001100010011100101111100100100011111
+In Hex(6 hex digit):
+99c31397c91f
+In Hex(8 hex digit - 6 bits data per byte):
+261c0c13253c241f
+
+K14:
+In Binary:
+001001010001101110001011110001110001011111010000
+In Hex(6 hex digit):
+251b8bc717d0
+In Hex(8 hex digit - 6 bits data per byte):
+09112e0b31311f10
+
+K15:
+In Binary:
+001100110011000011000101110110011010001101101101
+In Hex(6 hex digit):
+3330c5d9a36d
+In Hex(8 hex digit - 6 bits data per byte):
+0c330305361a0d2d
+
+K16:
+In Binary:
+000110000001110001011101011101011100011001101101
+In Hex(6 hex digit):
+181c5d75c66d
+In Hex(8 hex digit - 6 bits data per byte):
+0601311d1d1c192d
+
+
+------------------------------------------------
+DES ENCRYPTION PROCESS
+
+IP
+0001010010100111110101100111100000011000110010100001100010101101
+14a7d67818ca18ad
+
+Round 1:
+F(R,K):4edf35ec
+Output:
+18ca18ad5a78e394
+
+Round 2:
+F(R,K):52d8085b
+Output:
+5a78e3944a1210f6
+
+Round 3:
+F(R,K):e2707605
+Output:
+4a1210f6b8089591
+
+Round 4:
+F(R,K):69756934
+Output:
+b8089591236779c2
+
+Round 5:
+F(R,K):1952de16
+Output:
+236779c2a15a4b87
+
+Round 6:
+F(R,K):0de8e5a7
+Output:
+a15a4b872e8f9c65
+
+Round 7:
+F(R,K):08a66b24
+Output:
+2e8f9c65a9fc20a3
+
+Round 8:
+F(R,K):1e0472f2
+Output:
+a9fc20a3308bee97
+
+Round 9:
+F(R,K):b953bd94
+Output:
+308bee9710af9d37
+
+Round 10:
+F(R,K):5c2d25b7
+Output:
+10af9d376ca6cb20
+
+Round 11:
+F(R,K):ef93d568
+Output:
+6ca6cb20ff3c485f
+
+Round 12:
+F(R,K):4e035d1b
+Output:
+ff3c485f22a5963b
+
+Round 13:
+F(R,K):c74085f5
+Output:
+22a5963b387ccdaa
+
+Round 14:
+F(R,K):9f884490
+Output:
+387ccdaabd2dd2ab
+
+Round 15:
+F(R,K):f75a79d8
+Output:
+bd2dd2abcf26b472
+
+Round 16:
+F(R,K):a49740b9
+Output:
+cf26b47219ba9212
+
+IP REVERSE
+1100000010110111101010001101000001011111001110101000001010011100
+c0b7a8d05f3a829c
+
+Encrypted Value:
+c0b7a8d05f3a829c
