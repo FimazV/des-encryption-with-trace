@@ -249,8 +249,6 @@ void PC_2(char * CiDi,char * subKeyStorage){
   }
 }
 
-//not check
-
 char * xorBINARY(char * first, char * second, int len){
   char * res = new char[len];
   for(int i=0;i<len;i++){
